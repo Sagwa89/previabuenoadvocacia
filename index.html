@@ -556,14 +556,12 @@
         }
 
         .area-card {
-            background-color: rgba(27, 28, 30, 0.45);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
+            background-color: #ffffff;
             border-radius: var(--radius-lg);
             overflow: hidden;
             box-shadow: var(--shadow-sm);
             transition: var(--transition);
-            border: 1px solid rgba(255,255,255,0.14);
+            border: 1px solid transparent;
             display: flex;
             flex-direction: column;
         }
@@ -615,20 +613,20 @@
         .area-content h3 {
             font-size: 1.35rem;
             font-weight: 800;
-            color: #ffffff;
+            color: var(--primary-dark);
             margin-bottom: 12px;
         }
 
         .area-content p {
             font-size: 0.95rem;
-            color: rgba(255,255,255,0.75);
+            color: var(--text-muted);
             line-height: 1.6;
             margin-bottom: 24px;
             flex-grow: 1;
         }
 
         .area-link {
-            color: #ffffff;
+            color: var(--primary-dark);
             font-weight: 700;
             font-size: 0.9rem;
             text-decoration: none;
