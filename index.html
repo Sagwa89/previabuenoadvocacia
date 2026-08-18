@@ -507,12 +507,37 @@
 
         /* Areas of Practice - 6 Especialidades (Logo após os problemas) */
         .areas-section {
-            background-color: var(--primary-alt);
+            position: relative;
+            background-image: url('imagens/damadajustica.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .areas-section .container {
+            position: relative;
+            z-index: 1;
         }
 
         .areas-header {
             text-align: center;
             margin-bottom: 60px;
+            background: rgba(27, 28, 30, 0.45);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: var(--radius-md);
+            padding: 30px;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .areas-section .section-title,
+        .areas-section .section-subtitle {
+            color: #ffffff;
+        }
+
+        .areas-section .section-subtitle {
+            color: rgba(255,255,255,0.75);
         }
 
         .areas-header .section-subtitle {
@@ -526,12 +551,14 @@
         }
 
         .area-card {
-            background-color: #ffffff;
+            background-color: rgba(27, 28, 30, 0.45);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
             border-radius: var(--radius-lg);
             overflow: hidden;
             box-shadow: var(--shadow-sm);
             transition: var(--transition);
-            border: 1px solid transparent;
+            border: 1px solid rgba(255,255,255,0.14);
             display: flex;
             flex-direction: column;
         }
@@ -583,20 +610,20 @@
         .area-content h3 {
             font-size: 1.35rem;
             font-weight: 800;
-            color: var(--primary-dark);
+            color: #ffffff;
             margin-bottom: 12px;
         }
 
         .area-content p {
             font-size: 0.95rem;
-            color: var(--text-muted);
+            color: rgba(255,255,255,0.75);
             line-height: 1.6;
             margin-bottom: 24px;
             flex-grow: 1;
         }
 
         .area-link {
-            color: var(--primary-dark);
+            color: #ffffff;
             font-weight: 700;
             font-size: 0.9rem;
             text-decoration: none;
