@@ -286,15 +286,7 @@
         }
 
         .hero::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: linear-gradient(
-                90deg,
-                rgba(0, 0, 0, 0.9) 0%,
-                rgba(0, 0, 0, 0) 100%
-            );
-            z-index: 1;
+            content: none;
         }
 
         .hero-container {
@@ -305,16 +297,16 @@
 
         .hero-text {
             max-width: 750px;
-            margin: 0 auto;
-            text-align: center;
+            margin: 0;
+            text-align: left;
         }
 
         .hero-text .hero-actions {
-            justify-content: center;
+            justify-content: flex-start;
         }
 
         .hero-text p {
-            margin-left: auto;
+            margin-left: 0;
             margin-right: auto;
         }
 
@@ -328,7 +320,7 @@
             font-size: 4.5rem;
             line-height: 1.1;
             font-weight: 900;
-            color: #ffffff;
+            color: #888888;
             margin-bottom: 24px;
             letter-spacing: -1.5px;
         }
@@ -340,7 +332,7 @@
 
         .hero-text p {
             font-size: 1.2rem;
-            color: rgba(255, 255, 255, 0.8);
+            color: #888888;
             margin-bottom: 40px;
             line-height: 1.8;
             max-width: 550px;
